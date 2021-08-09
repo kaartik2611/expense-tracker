@@ -46,18 +46,26 @@ export const ExpenseForm = ({ items, setItems, init, setInit }) => {
     <Fragment>
       <div className='center-form'>
         <form>
+          <div className='res-inp'>
           <label className='text-white balance-text'>Set Balance : </label>
-          <input className='input' type="number" placeholder='Add Inital Balance' value={init} onChange={changeInit} />
+          <input className='input ' type="number" placeholder='Add Inital Balance' value={init} onChange={changeInit} />
+          </div>
+          <div className='res-btn'>
           <button className='btn' onClick={setInitBal}>Set</button>
+          </div>
         </form>
       </div>
       <p className='text-white warning'>{warning}</p>
 
       <div className='center-form'>
         <form>
+          <div className='res-inp'>
           <input className='input' type="text" placeholder="Add Item" value={item} onChange={addItem} />
           <input className='input' type="number" placeholder='Add Cost' value={cost} onChange={addCost} />
+          </div>
+          <div className='res-btn'>
           <button className='btn' onClick={newItem}>Submit</button>
+          </div>
         </form>
       </div>
     </Fragment>
