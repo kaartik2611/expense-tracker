@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 
-export const ExpenseForm = ({ items, setItems, init, setInit }) => {
+export const ExpenseForm = ({ items, setItems, init, setInit  }) => {
   const [warning, setWarning] = useState("");
   const [item, setItem] = useState('')
   const [cost, setCost] = useState('')
@@ -37,7 +37,7 @@ export const ExpenseForm = ({ items, setItems, init, setInit }) => {
       setItems([
         ...items,
         { id: Date.now(), title: item, cost: cost },
-      ]);
+      ])
     setItem("");
     setCost('');
     setWarning("");

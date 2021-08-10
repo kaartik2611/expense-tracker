@@ -47,7 +47,6 @@ code {
 outline: none;
 }
 .btn{
-  width:100px;
   height: 3rem;
   outline: none;
   border-radius:5px;
@@ -104,6 +103,18 @@ outline: none;
   flex-direction:row;
   justify-content: center;
 }
+.list-heading{
+  text-align: center;
+  color :#d6d2c4;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.balance-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 @media (max-width:768px) {
   .list{
       margin: 0;
@@ -117,6 +128,9 @@ outline: none;
   display:flex;
   margin: 12px 0;
   justify-content: center;
+}
+.balance-div{
+  flex-direction: column;
 }
 }
 
